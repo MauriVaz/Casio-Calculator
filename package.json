@@ -1,0 +1,14 @@
+{
+  "name": "Calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MauriVaz/Calculator.git",
+  "author": "MauriVaz <mvazquezcostal@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  }
+}
