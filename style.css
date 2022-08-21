@@ -26,7 +26,7 @@ input:hover {
   background-color: #3b3b3b;
 }
 #result {
-  background-color: lightgreen;
+  background-color: black;
   padding: 5vh;
   color: black;
   border-radius: 5%;
@@ -34,13 +34,17 @@ input:hover {
   font-style: italic;
   font-weight: bolder;
 }
-
 #c,
 #on,
 #off,
-#del {
+#del,
+#equal {
   background-color: rgb(231, 13, 13);
 }
-#c:hover {
+#c:hover,
+#on:hover,
+#del:hover,
+#off:hover,
+#equal:hover {
   background-color: red;
 }

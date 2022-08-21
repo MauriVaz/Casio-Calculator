@@ -41,12 +41,14 @@
         <tr>
             <td align="center" valign="center"><input type="button" value="." onclick="view('.')"/> </td>
             <td align="center" valign="center"><input type="button" value="0" onclick="view('0')"/> </td>
-            <td align="center" valign="center"><input type="button" value="=" onclick="compute('=')"/> </td>
+            <td align="center" valign="center"><input type="button" value="=" id="equal" onclick="compute('=')"/> </td>
             <td align="center" valign="center"><input type="button" value="*" onclick="view('*')"/> </td>
         </tr>
         <tr>
             <td align="center" valign="center"><input type="button" value="DEL" id="del" onclick="del()"/> </td>
             <td align="center" valign="center"><input type="button" value="00" onclick="view('00')"/> </td>
+            <td align="center" valign="center"><input type="button" value="OFF" id="off" onclick="off()"/> </td>
+            <td align="center" valign="center"><input type="button" value="ON" id="on" onclick="on()"/> </td>
         </tr>
     </table>
 </section>

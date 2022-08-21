@@ -1,3 +1,4 @@
+let state = false;
 view = (num) => {
   document.getElementById('result').value += num;
 };
@@ -34,4 +35,12 @@ del = () => {
 
 clr = () => {
   document.getElementById('result').value = '';
+};
+on = () => {
+  document.getElementById('result').style.backgroundColor = 'lightgreen';
+  clr();
+};
+off = () => {
+  document.getElementById('result').style.backgroundColor = 'black';
+  clr();
 };
