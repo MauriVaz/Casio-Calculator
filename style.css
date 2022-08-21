@@ -3,6 +3,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 table {
   border-radius: 2%;
@@ -18,10 +20,27 @@ input {
   color: white;
   padding: 2vh;
   border-radius: 20%;
+  font-weight: bolder;
+}
+input:hover {
+  background-color: #3b3b3b;
 }
 #result {
   background-color: lightgreen;
   padding: 5vh;
   color: black;
   border-radius: 5%;
+  font-size: larger;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#c,
+#on,
+#off,
+#del {
+  background-color: rgb(231, 13, 13);
+}
+#c:hover {
+  background-color: red;
 }

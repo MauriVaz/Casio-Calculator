@@ -10,25 +10,15 @@
     <audio src="./public/sound.mp3" autoplay loop></audio>
 </head>
 <body>
-    <table border="4">
+    <h1>Calculadora simple hecha con HTML, CSS y JAVASCRIPT</h1>
+    <section>
+        <table border="4">
         <tr>
             <td align="center" valign="center" colspan="6"><img src="./public/logo.jpg"/></td>
         </tr>
         <tr>
-            <td align="center" valign="center" colspan="3"><input type="text" id="result"/> </td>
-            <td align="center" valign="center"><input type="button" value="c" onclick="clr()"/> </td>
-        </tr>
-        <tr>
-            <td align="center" valign="center"><input type="button" value="1" onclick="view('1')"/> </td>
-            <td align="center" valign="center"><input type="button" value="2" onclick="view('2')"/> </td>
-            <td align="center" valign="center"><input type="button" value="3" onclick="view('3')"/> </td>
-            <td align="center" valign="center"><input type="button" value="/" onclick="view('/')"/> </td>
-        </tr>
-        <tr>
-            <td align="center" valign="center"><input type="button" value="4" onclick="view('4')"/> </td>
-            <td align="center" valign="center"><input type="button" value="5" onclick="view('5')"/> </td>
-            <td align="center" valign="center"><input type="button" value="6" onclick="view('6')"/> </td>
-            <td align="center" valign="center"><input type="button" value="-" onclick="view('-')"/> </td>
+            <td align="center" valign="center" colspan="3"><input type="text" id="result" readonly/> </td>
+            <td align="center" valign="center"><input type="button" value="C" id="c" onclick="clr()"/> </td>
         </tr>
         <tr>
             <td align="center" valign="center"><input type="button" value="7" onclick="view('7')"/> </td>
@@ -37,11 +27,28 @@
             <td align="center" valign="center"><input type="button" value="+" onclick="view('+')"/> </td>
         </tr>
         <tr>
+            <td align="center" valign="center"><input type="button" value="4" onclick="view('4')"/> </td>
+            <td align="center" valign="center"><input type="button" value="5" onclick="view('5')"/> </td>
+            <td align="center" valign="center"><input type="button" value="6" onclick="view('6')"/> </td>
+            <td align="center" valign="center"><input type="button" value="-" onclick="view('-')"/> </td>
+        </tr>
+        <tr>
+            <td align="center" valign="center"><input type="button" value="1" onclick="view('1')"/> </td>
+            <td align="center" valign="center"><input type="button" value="2" onclick="view('2')"/> </td>
+            <td align="center" valign="center"><input type="button" value="3" onclick="view('3')"/> </td>
+            <td align="center" valign="center"><input type="button" value="/" onclick="view('/')"/> </td>
+        </tr>
+        <tr>
             <td align="center" valign="center"><input type="button" value="." onclick="view('.')"/> </td>
             <td align="center" valign="center"><input type="button" value="0" onclick="view('0')"/> </td>
             <td align="center" valign="center"><input type="button" value="=" onclick="compute('=')"/> </td>
             <td align="center" valign="center"><input type="button" value="*" onclick="view('*')"/> </td>
         </tr>
+        <tr>
+            <td align="center" valign="center"><input type="button" value="DEL" id="del" onclick="del()"/> </td>
+            <td align="center" valign="center"><input type="button" value="00" onclick="view('00')"/> </td>
+        </tr>
     </table>
+</section>
 </body>
 </html>
