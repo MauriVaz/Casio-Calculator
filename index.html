@@ -10,15 +10,27 @@
     <audio src="./public/sound.mp3" autoplay loop></audio>
 </head>
 <body>
-    <h1>Calculadora simple hecha con HTML, CSS y JAVASCRIPT</h1>
+    <h1>Simple calculator using the basic elements of the frontend HTML, CSS and JAVASCRIPT</h1>
     <section>
         <table border="4">
         <tr>
-            <td align="center" valign="center" colspan="6"><img src="./public/logo.jpg"/></td>
+            <td id="Casio" align="center" valign="center" colspan="6">
+                <ul id="Top">
+                    <li>
+                        <p id="Marca">CASIO</p>
+                    </li>
+                    <li>
+                        <p><i>fx-</i>82MS</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li id="submarca">S-V.P.A.M</li>
+                </ul>
+            </td>
         </tr>
         <tr>
             <td align="center" valign="center" colspan="3"><input type="text" id="result" readonly/> </td>
-            <td align="center" valign="center"><input type="button" value="C" id="c" onclick="clr()"/> </td>
+            <td align="center" valign="center"><input type="button" value="AC" id="c" onclick="clr()"/> </td>
         </tr>
         <tr>
             <td align="center" valign="center"><input type="button" value="7" onclick="view('7')"/> </td>
